@@ -150,29 +150,29 @@ function App() {
     description: "Focused on software development, algorithms, and system design. Active participant in coding competitions and technical workshops."
   };
 
-const experiences = [
-  {
-    title: "Web Design Intern",
-    company: "EtherInfo Tech",
-    period: "Jan 2024 - Feb 2024",
-    description:
-      "Designed responsive and user-friendly websites using HTML, CSS, and Figma. Collaborated on UI/UX design to enhance visual appeal and usability.",
-  },
-  {
-    title: "Python Programming Intern",
-    company: "FacePrep",
-    period: "Jul 2024 - Aug 2024",
-    description:
-      "Gained hands-on experience in Python through real-world projects. Improved coding and problem-solving skills while working in collaborative development teams.",
-  },
-  {
-    title: "Freelance Developer",
-    company: "Self-Employed",
-    period: "2024 - Present",
-    description:
-      "Developed custom web and Java-based applications for clients. Specialized in backend development, SQL integration, and responsive web design.",
-  },
-];
+  const experiences = [
+    {
+      title: "Web Design Intern",
+      company: "EtherInfo Tech",
+      period: "Jan 2024 - Feb 2024",
+      description:
+        "Designed responsive and user-friendly websites using HTML, CSS, and Figma. Collaborated on UI/UX design to enhance visual appeal and usability.",
+    },
+    {
+      title: "Python Programming Intern",
+      company: "FacePrep",
+      period: "Jul 2024 - Aug 2024",
+      description:
+        "Gained hands-on experience in Python through real-world projects. Improved coding and problem-solving skills while working in collaborative development teams.",
+    },
+    {
+      title: "Freelance Developer",
+      company: "Self-Employed",
+      period: "2024 - Present",
+      description:
+        "Developed custom web and Java-based applications for clients. Specialized in backend development, SQL integration, and responsive web design.",
+    },
+  ];
 
 
   return (
@@ -243,7 +243,7 @@ const experiences = [
         .skill-percentage { color: #ff0080; font-weight: 600; }
         .skill-bar-bg { width: 100%; height: 6px; background: #1a1a1a; border-radius: 10px; overflow: hidden; }
         .skill-bar-fill { 
-            width: 0; /* <-- IMPORTANT: Initial state for animation */
+            width: 0; 
             height: 100%; 
             background: linear-gradient(90deg, #ff0080, #ff8c00); 
             border-radius: 10px; 
@@ -344,17 +344,20 @@ const experiences = [
               <a href="#projects" className="btn-secondary">View Projects</a>
             </div>
           </div>
+          
           <div className="hero-image-container">
             <div className="hero-image-wrapper">
-              <img src="src/assets/profile.png" alt="Logesh" className="hero-image" />
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Logesh" className="hero-image" />
             </div>
+
             <div className="floating-badge floating-badge-1">
-              <div style={{fontWeight: 600, marginBottom: '0.3rem'}}>10+</div>
-              <div style={{fontSize: '0.85rem', color: '#888'}}>Projects</div>
+              <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>10+</div>
+              <div style={{ fontSize: '0.85rem', color: '#888' }}>Projects</div>
             </div>
+
             <div className="floating-badge floating-badge-2">
-              <div style={{fontWeight: 600, marginBottom: '0.3rem'}}>CGPA 8.18</div>
-              <div style={{fontSize: '0.85rem', color: '#888'}}>Academic</div>
+              <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>CGPA 8.18</div>
+              <div style={{ fontSize: '0.85rem', color: '#888' }}>Academic</div>
             </div>
           </div>
         </section>
@@ -386,8 +389,8 @@ const experiences = [
               <div key={i} className="skills-category">
                 <h3 className="skills-category-title">{category.title}</h3>
                 <div className="skills-list">
-                 {category.skills.map((skill, j) => (
-                      <div key={j} className="skill-item animate-on-scroll">
+                  {category.skills.map((skill, j) => (
+                    <div key={j} className="skill-item animate-on-scroll">
                       <div className="skill-header">
                         <span className="skill-name">{skill.name}</span>
                         <span className="skill-percentage">{skill.level}%</span>
