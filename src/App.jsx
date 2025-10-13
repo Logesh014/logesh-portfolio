@@ -338,28 +338,25 @@ function App() {
             <div className="hero-label">WELCOME TO MY WORLD</div>
             <h1 className="hero-title">Hi, I'm <span className="gradient">Logesh S</span></h1>
             <h2 className="hero-subtitle">a Java Developer.</h2>
-            <p className="hero-description">I build exceptional and accessible digital experiences. Passionate about creating efficient, scalable applications and solving complex problems.</p>
+            <p className="hero-description">
+              I build exceptional and accessible digital experiences. Passionate about creating efficient, scalable applications and solving complex problems.
+            </p>
             <div className="typed-text" ref={typedElement}></div>
             <div className="hero-buttons">
               <a href="#contact" className="btn-primary">Hire Me <ExternalLink size={18} /></a>
               <a href="#projects" className="btn-secondary">View Projects</a>
             </div>
           </div>
-          
-          <div className="hero-image-container">
-            <div className="hero-image-wrapper">
-              <img src={profile} alt="Logesh" className="hero-image" />
-            </div>
-
-            <div className="floating-badge floating-badge-1">
-              <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>10+</div>
-              <div style={{ fontSize: '0.85rem', color: '#888' }}>Projects</div>
-            </div>
-
-            <div className="floating-badge floating-badge-2">
-              <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>CGPA 8.18</div>
-              <div style={{ fontSize: '0.85rem', color: '#888' }}>Academic</div>
-            </div>
+          <div className="hero-image-wrapper">
+            <img src={profile} alt="Logesh" className="hero-image" />
+          </div>
+          <div className="floating-badge floating-badge-1">
+            <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>10+</div>
+            <div style={{ fontSize: '0.85rem', color: '#888' }}>Projects</div>
+          </div>
+          <div className="floating-badge floating-badge-2">
+            <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>CGPA 8.18</div>
+            <div style={{ fontSize: '0.85rem', color: '#888' }}>Academic</div>
           </div>
         </section>
 
