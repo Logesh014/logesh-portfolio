@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { Code, Mail, Github, Linkedin, Award, MapPin, GraduationCap, ExternalLink, Briefcase, Calendar, ChevronRight, Phone } from 'lucide-react';
-import profile from './assets/profile.png';
 
 const useTypedEffect = (element, strings) => {
   useEffect(() => {
@@ -348,7 +347,7 @@ function App() {
             </div>
           </div>
           <div className="hero-image-wrapper">
-            <img src={profile} alt="Logesh" className="hero-image" />
+            <img src="/profile.png" alt="Logesh" className="hero-image" />
           </div>
           <div className="floating-badge floating-badge-1">
             <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>10+</div>
