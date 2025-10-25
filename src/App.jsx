@@ -347,7 +347,7 @@ function App() {
             </div>
           </div>
           <div className="hero-image-wrapper">
-            <img src="/profile.png" alt="Logesh" className="hero-image" />
+          <img src={`${import.meta.env.BASE_URL}profile.png`} alt="Logesh" className="hero-image" />
           </div>
           <div className="floating-badge floating-badge-1">
             <div style={{ fontWeight: 600, marginBottom: '0.3rem' }}>10+</div>
